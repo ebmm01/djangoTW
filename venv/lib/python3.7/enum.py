@@ -1,1 +1,1 @@
-/home/eliasb/anaconda3/lib/python3.7/enum.py
+/usr/lib/python3.7/enum.py

@@ -1,4 +1,4 @@
-#!/home/eliasb/Documentos/Curso Django/venv/bin/python
+#!/home/eliasb/Documentos/Curso_Django/venv/bin/python
 
 import sys
 import getopt
