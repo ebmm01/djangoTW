@@ -1,4 +1,4 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.shortcuts import render,redirect
 
 def cadastrar_usuario(request):
@@ -10,3 +10,7 @@ def cadastrar_usuario(request):
     else:
         form_usuario = UserCreationForm() 
     return render(request, 'usuarios/form_usuario.html', {'form_usuario': form_usuario})
+
+def logar_usuario(request):
+    form_login = AuthenticationForm()
+    return render(request, 'usuarios/login.html', {'form_login': form_login})
