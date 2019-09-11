@@ -5,4 +5,5 @@ class TarefaForm(forms.ModelForm):
     
     class Meta:
         model = Tarefas
+        exclude = ('usuario',)
         fields = '__all__'
