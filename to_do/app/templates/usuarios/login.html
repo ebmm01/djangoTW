@@ -1,9 +1,17 @@
 {% extends 'base.html' %}
+{% load meus_filtros %}
 
 {% block conteudo %}
 
 <form method="post">
     {% csrf_token %}
+
+    {% for message in messages %}
+        <div class="alert alert-danger">
+            {{message}}
+        </div>
+    {% endfor %}
+    
     <div class="form-group">
         {{ form_login.username.errors}}
         <label> Nome de usuário:</label>
